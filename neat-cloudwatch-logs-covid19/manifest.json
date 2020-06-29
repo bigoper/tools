@@ -1,0 +1,34 @@
+{
+  "manifest_version": 2,
+  "name": "Fivetran Neat CloudWatch Logs (COVID19)",
+  "author": "Avi (bigoper) Ivgi",
+  "description": "Improving your search/filter capabilities with pre-defined search terms.",
+  "homepage_url": "http://bigoper.com",
+  "version": "0.2",
+  "content_scripts": [
+  	{
+  	  "matches": [
+        "https://console.aws.amazon.com/cloudwatch/*", 
+        "*://*.fivetran.com/backstage"],
+  	  "js": [
+        "jquery-3.5.1.slim.min.js",
+        "bootstrap-4.5.0-dist/js/popper.js",
+        "bootstrap-4.5.0-dist/js/bootstrap.bundle.js",
+        "config.js",
+        "content.js"
+      ],
+  	  "css": [
+        "bootstrap-4.5.0-dist/css/bootstrap.min.css",
+        "styles.css"
+      ]
+  	}
+  ],
+  "browser_action": {
+    "default_icon": "covid19.png"
+  },
+  "icons": {
+    "16": "covid19.png",
+    "48": "covid19.png",
+    "128": "covid19.png"
+  }
+}

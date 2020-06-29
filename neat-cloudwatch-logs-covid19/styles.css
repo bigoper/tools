@@ -1,0 +1,14 @@
+.btn-group {
+	float: right !important;
+    flex-direction: row-reverse !important;
+    display: flex !important;
+    margin-left: 5px !important;
+}
+
+.dropdown-menu a {
+	text-decoration: none !important;
+}
+
+.cwdb-log-viewer-table-column-time:hover {
+	text-decoration: underline;
+}
